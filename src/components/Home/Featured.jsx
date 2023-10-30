@@ -16,23 +16,6 @@ const Featured = () => {
     setStartIndex((prevIndex) => prevIndex === 0 ? featured.length - 1 : prevIndex - 1)
   }
 
-  // useEffect(() => {
-  //   axios.get('https://www.eventbriteapi.com/v3/categories', {
-  //       params: {
-  //           'organizer.id': 'YOUR_ORGANIZER_ID',
-  //       },
-  //       headers: {
-  //           Authorization: 'Bearer 5RENH766U6BAGUEKLAEJ',
-  //       },
-  //   })
-  //   .then((response) => {
-  //       console.log(response.data.events);
-  //       setFeaturedEvents(response.data.events);
-  //   })
-  //   .catch((error) => {
-  //       console.error('Error fetching featured events', error);
-  //   });
-  // }, []);
 
   return (
     <div className='mx-8'>
