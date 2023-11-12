@@ -16,6 +16,12 @@ const Featured = () => {
     setStartIndex((prevIndex) => prevIndex === 0 ? featured.length - 1 : prevIndex - 1)
   }
 
+  const backgroundImageStyle = {
+    backgroundImage: `url(${featured.image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
 
   return (
     <div className='mx-8'>

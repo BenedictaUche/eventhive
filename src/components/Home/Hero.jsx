@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HeroImg from "../../assets/home-1.png";
 
 
 const Hero = () => {
+
+  const backgroundImageStyle = {
+    backgroundImage: `url(${HeroImg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
   return (
     <>
-      <div className="bg-[#dfdfdf] flex flex-col py-8 px-6 mx-4 my-2 rounded-lg">
+      <div className="bg-[#dfdfdf] flex flex-col py-8 px-6 mx-4 my-2 rounded-lg" >
         <div className="my-14">
             <div className="w-[20em]">
           <h2 className="text-black font-bold text-4xl pb-4">

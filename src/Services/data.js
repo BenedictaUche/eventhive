@@ -1,9 +1,10 @@
-
+import imageOne from '../assets/home-1.png';
+import imageTwo from '../assets/home-2.png';
 
 export const featured = [
     {
         id: 1,
-        image: '../src/assets/home-1.png',
+        image: imageOne,
         title: 'Google DevFest',
         description: 'Google DevFest is a community-led, Google supported, conference series for developers.',
         location: 'Online',
@@ -11,7 +12,7 @@ export const featured = [
     },
     {
         id: 2,
-        image: '../src/assets/home-2.png',
+        image: imageTwo,
         title: 'New Year Party',
         description: 'No better way to celebrate the new year than a fun party with friends and families at the beach',
         location: 'Lagos, Nigeria',
