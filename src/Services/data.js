@@ -1,5 +1,8 @@
 import imageOne from '../assets/home-1.png';
 import imageTwo from '../assets/home-2.png';
+import cookingImg from '../assets/cooking.webp';
+import halloweenImg from '../assets/halloween.webp';
+import partyImg from '../assets/party.webp';
 
 export const featured = [
     {
@@ -93,10 +96,29 @@ export const category = [
 
 ]
 
-const myEvents = [];
-
-function addEvent(event) {
-    myEvents.push(event);
-}
-
-export { myEvents, addEvent };
+export const recentEvents = [
+    {
+        id: 1,
+        image: cookingImg,
+        title: 'Cooking Class',
+        description: 'Learn how to cook delicious meals from the best chefs in the world',
+        location: 'Lagos, Nigeria',
+        date: '2023-05-12'
+    },
+    {
+        id: 2,
+        image: halloweenImg,
+        title: 'Halloween Party',
+        description: 'No better way to celebrate the new year than a fun party with friends and families at the beach',
+        location: 'Lagos, Nigeria',
+        date: '2024-01-01'
+    },
+    {
+        id: 3,
+        image: partyImg,
+        title: 'New Year Party',
+        description: 'No better way to celebrate the new year than a fun party with friends and families at the beach',
+        location: 'Lagos, Nigeria',
+        date: '2024-01-01'
+    }
+]

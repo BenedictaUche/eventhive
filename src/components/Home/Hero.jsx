@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImg from "../../assets/home-1.png";
+import HeroImg from "../../assets/dark.webp";
+import CookingImg from "../../assets/cooking.webp";
+import HalloweenImg from "../../assets/halloween.webp";
+import PartyImg from "../../assets/party.webp";
 
 
 const Hero = () => {
@@ -12,7 +15,7 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="bg-[#dfdfdf] flex flex-col py-8 px-6 mx-4 my-2 rounded-lg" >
+      <div className=" flex flex-col py-8 px-6 mx-4 my-2 rounded-lg" style={backgroundImageStyle} >
         <div className="my-14">
             <div className="w-[20em]">
           <h2 className="text-black font-bold text-4xl pb-4">
