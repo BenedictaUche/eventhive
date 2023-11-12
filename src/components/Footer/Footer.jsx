@@ -1,26 +1,17 @@
-import React from 'react';
-import FooterSVG from '../../assets/bg-grain.svg';
+import { Link } from "react-router-dom";
 
-function Footer() {
-  const bgImage = `url(${FooterSVG})`;
-
+const Footer = () => {
   return (
-    <div className="bg-no-repeat bg-center bg-cover" style={{ backgroundImage: bgImage }}>
-      <div className="bg-black bg-opacity-90 text-white py-8">
-        <div className="flex flex-col items-center justify-center h-full text-center">
-          <p className="font-extrabold text-2xl">EventHub</p>
-          <p className="text-sm">1234 Event Street, Cityville, State 12345</p>
-          <p className="text-sm">info@eventhub.com</p>
-          <div className="mt-4">
-            <a href="/about" className="text-white hover:underline">About Us</a>
-            <span className="text-white mx-2">|</span>
-            <a href="/contact" className="text-white hover:underline">Contact Us</a>
-          </div>
-          <p className="text-xs mt-4">&copy; {new Date().getFullYear()} EventHub</p>
+    <>
+      <div className="bg-red-800 bg-opacity-75 flex justify-between h-[4em] items-center px-6 text-white text-xl font-medium">
+        <h2>© 2023 BloodSaver. All rights reserved.</h2>
+        <div className="inline-flex gap-4">
+          <Link>Terms of service</Link>
+          <Link>Privacy</Link>
         </div>
       </div>
-    </div>
+    </>
   );
-}
+};
 
 export default Footer;

@@ -17,10 +17,10 @@ function HeroSection({ image, title, date }) {
       className=" flex flex-col py-8 px-6 mx-4 h-96 my-2 rounded-lg"
       style={backgroundImageStyle}
     >
-      <div className="my-14 flex items-center mx-auto">
-        <div className="w-[20em]">
-          <h2 className="text-white font-bold text-6xl pb-4">{title}</h2>
-          <p className="text-xl font-semibold">{new Date(date).toLocaleString()}</p>
+      <div className="my-14 flex mx-auto">
+        <div className="">
+          <h2 className="text-white font-bold text-8xl pb-4">{title}</h2>
+          <p className="mt-4 text-xl text-white text-center">{new Date(date).toLocaleString()}</p>
         </div>
       </div>
     </div>
